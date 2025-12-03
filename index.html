@@ -9,14 +9,28 @@
 </head>
 <body>
 <section id="bottomNav">
+            
 
         <a href="#" class="bookPic">
-            <div class="topContent" id="booksIcon">NIGHTWATCHER</div>
-          
+          <div id="booksIcon">NIGHTWATCHER</div>
         </a>
-        <input type="text" id="searchInput" placeholder="Search Thousands of Movies…">        <ul class="mainNavLinks">
-            <li id="contact" class="topContent underline-hover"> <a href="https://www.barnesandnoble.com/">
-                    GENRES</a>
+
+        <input type="text" id="searchInput" class="topContent underline-hover" placeholder="Search Thousands of Movies…">        <ul class="mainNavLinks">
+
+    
+            <li id="contact" class="topContent underline-hover">
+              <section id="dropIt" class="topContent underline-hover">
+               <label id="genresLabel" class="topContent underline-hover">
+              GENRES</label>
+
+                <select id="genreDd" name="genreDdName">
+                  <option value = "empty"> </option>
+                  <option value="movieOne">Action</option>
+                  <option value="movieOne">Comedy</option>
+                  <option value="movieOne">Drama</option>
+                  </a>
+                    </select>
+                    </section>
             </li>
             <li id="about" class="topContent underline-hover"> <a href="https://www.barnesandnoble.com/">
                     NEW MOVIES</a>

@@ -107,7 +107,7 @@ async function openMovieDetails(id) {
     details.innerHTML = `
         <h2>${movie.title}</h2>
         <img style="width:100%" src="https://image.tmdb.org/t/p/w500${movie.poster_path}">
-        <button id="favBtn" class="fav-btn">⭐ Add to Favorites</button>
+        <button id="favBtn" class="fav-btn"> Add to Favorites</button>
 
         <p><strong>Release Date:</strong> ${movie.release_date}</p>
         <p><strong>Rating:</strong> ${movie.vote_average}</p>
