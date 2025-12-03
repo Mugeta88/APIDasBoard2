@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    document.getElementById("loadingScreen").classList.add("hidden");
+  }, 3000);
+});
+
 const API_KEY = "d1fdb22551613717a622bc5adbf2893a"
 const BASE_URL = "https://api.themoviedb.org/3"
 
