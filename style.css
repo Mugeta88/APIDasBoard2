@@ -210,6 +210,7 @@ box-shadow: #ffffff;
   border-radius: 50px;
   margin-bottom: 20px;
   margin-top: 20px;
+  border-style: solid;
 }
 
 #modalDetails h2 {
@@ -261,6 +262,7 @@ box-shadow: #ffffff;
   overflow-y: auto;
   letter-spacing: 2px;
     align-items: center;
+    border-style: solid;
   }
 
 
@@ -332,4 +334,11 @@ box-shadow: #ffffff;
 
 .hidden {
   display: none !important;
+}
+
+#popcorn {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  
 }
