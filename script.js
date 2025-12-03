@@ -105,3 +105,55 @@ async function openMovieDetails(id) {
   modal.classList.remove("hidden");
 }
 
+document.getElementById("closeModal").onclick = () => {
+    document.getElementById("modal").classList.add("hidden")
+}
+
+function loadFavorites () {
+    return JSON.parse(localStorage.getItem("favorites")) || []
+}
+
+function saveFavorites (list) {
+    localStorage.setItem("favorites", JSON.stringify(list))
+}
+
+function addToFavorites(movie) {
+    let favorites = loadFavorites()
+
+    if (favorites.some(fav => fav.id === movie.id)) {
+        alert("Already in Favorites!")
+        return
+    }
+
+    favorites.push(movie)
+    saveFavorites(favorites)
+    alert("Added to Favorites!")
+    displayFavorites()
+}
+
+function displayFavorites() {
+    const container = document.getElementById("favoritesDiv")
+    const favorites = loadFavorites()
+    container.innerHTML = ""
+
+    favorites.forEach(movie => {
+        const div = document.createElement("div")
+        div.classList.add("movie")
+
+        div.innerHTML = `
+        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}">
+        <h3>${movie.title}<h3>
+        `
+        div.addEventListener("click", () => openMovieDetails(movie.id))
+        coontainer.appendChild(div)
+    })
+}
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+  }
+})
+
+getTrendingMovies()
+displayFavorites()
