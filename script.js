@@ -20,7 +20,7 @@ function displayMovies(movies) {
         const div = document.createElement("div")
         div.classList.add("movie")
         div.innerHTML = `
-        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${moive.title}">
+        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
         <h3>${movie.title}<h3>
         `
         div.addEventListener("click", () => openMovieDetails(movie.id))
@@ -170,7 +170,7 @@ function displayFavorites() {
         <h3>${movie.title}<h3>
         `
         div.addEventListener("click", () => openMovieDetails(movie.id))
-        coontainer.appendChild(div)
+        container.appendChild(div)
     })
 }
 
