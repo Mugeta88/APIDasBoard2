@@ -178,6 +178,8 @@ box-shadow: #ffffff;
   overflow: hidden;
   transition: transform 0.2s;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  border-style: solid;
+  border-color: #515151;
 }
 
 
@@ -341,4 +343,26 @@ box-shadow: #ffffff;
   justify-content: center;
   font-size: 50px;
   
+}
+
+#linkedin {
+  color: #fff;
+  display: flex;
+}
+
+.linkD {
+  color: #fff;
+  display: flex;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  word-spacing: 3px;
+  padding-right: 5px;
+  color: #e1dcdc;
+}
+#move {
+  padding-left: 5px;
+
 }
